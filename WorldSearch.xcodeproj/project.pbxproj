@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3327773416F3E724006A99AB /* DataMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3327773316F3E724006A99AB /* DataMigrator.m */; };
 		33BCF6F216F3D5D100D52F8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BCF6F116F3D5D100D52F8B /* UIKit.framework */; };
 		33BCF6F416F3D5D100D52F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BCF6F316F3D5D100D52F8B /* Foundation.framework */; };
 		33BCF6F616F3D5D100D52F8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BCF6F516F3D5D100D52F8B /* CoreGraphics.framework */; };
@@ -17,10 +18,21 @@
 		33BCF70616F3D5D100D52F8B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33BCF70516F3D5D100D52F8B /* Default@2x.png */; };
 		33BCF70816F3D5D100D52F8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33BCF70716F3D5D100D52F8B /* Default-568h@2x.png */; };
 		33BCF70B16F3D5D100D52F8B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BCF70916F3D5D100D52F8B /* MainStoryboard.storyboard */; };
-		33BCF70E16F3D5D100D52F8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCF70D16F3D5D100D52F8B /* ViewController.m */; };
+		33BCF71916F3D63900D52F8B /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCF71816F3D63900D52F8B /* CoreDataTableViewController.m */; };
+		33BCF71C16F3D65800D52F8B /* WordSearchTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCF71B16F3D65800D52F8B /* WordSearchTVC.m */; };
+		33BCF71F16F3D6B800D52F8B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33BCF71D16F3D6B700D52F8B /* Model.xcdatamodeld */; };
+		33BCF72216F3D73400D52F8B /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCF72116F3D73400D52F8B /* CoreDataHelper.m */; };
+		33BCF72416F3D73E00D52F8B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BCF72316F3D73E00D52F8B /* CoreData.framework */; };
+		33BCF72716F3D76000D52F8B /* MyUIManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCF72616F3D76000D52F8B /* MyUIManagedDocument.m */; };
+		33BCF72D16F3D79100D52F8B /* Word+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BCF72C16F3D79100D52F8B /* Word+Create.m */; };
+		33BCF72F16F3D8B900D52F8B /* wordsEn.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33BCF72E16F3D8B900D52F8B /* wordsEn.txt */; };
+		33DD72C016F4395200233BB2 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DD72BF16F4395200233BB2 /* Word.m */; };
+		33DD72C216F43BA200233BB2 /* CoreData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 33DD72C116F43BA200233BB2 /* CoreData.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3327773216F3E724006A99AB /* DataMigrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMigrator.h; sourceTree = "<group>"; };
+		3327773316F3E724006A99AB /* DataMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMigrator.m; sourceTree = "<group>"; };
 		33BCF6EE16F3D5D100D52F8B /* WorldSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BCF6F116F3D5D100D52F8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		33BCF6F316F3D5D100D52F8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,8 +47,22 @@
 		33BCF70516F3D5D100D52F8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		33BCF70716F3D5D100D52F8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		33BCF70A16F3D5D100D52F8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		33BCF70C16F3D5D100D52F8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		33BCF70D16F3D5D100D52F8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33BCF71716F3D63900D52F8B /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		33BCF71816F3D63900D52F8B /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		33BCF71A16F3D65800D52F8B /* WordSearchTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordSearchTVC.h; sourceTree = "<group>"; };
+		33BCF71B16F3D65800D52F8B /* WordSearchTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordSearchTVC.m; sourceTree = "<group>"; };
+		33BCF71E16F3D6B800D52F8B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		33BCF72016F3D73400D52F8B /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		33BCF72116F3D73400D52F8B /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		33BCF72316F3D73E00D52F8B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		33BCF72516F3D75F00D52F8B /* MyUIManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIManagedDocument.h; sourceTree = "<group>"; };
+		33BCF72616F3D76000D52F8B /* MyUIManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIManagedDocument.m; sourceTree = "<group>"; };
+		33BCF72B16F3D79100D52F8B /* Word+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Word+Create.h"; sourceTree = "<group>"; };
+		33BCF72C16F3D79100D52F8B /* Word+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Word+Create.m"; sourceTree = "<group>"; };
+		33BCF72E16F3D8B900D52F8B /* wordsEn.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordsEn.txt; sourceTree = "<group>"; };
+		33DD72BE16F4395200233BB2 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		33DD72BF16F4395200233BB2 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		33DD72C116F43BA200233BB2 /* CoreData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreData.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BCF72416F3D73E00D52F8B /* CoreData.framework in Frameworks */,
 				33BCF6F216F3D5D100D52F8B /* UIKit.framework in Frameworks */,
 				33BCF6F416F3D5D100D52F8B /* Foundation.framework in Frameworks */,
 				33BCF6F616F3D5D100D52F8B /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +100,7 @@
 		33BCF6F016F3D5D100D52F8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33BCF72316F3D73E00D52F8B /* CoreData.framework */,
 				33BCF6F116F3D5D100D52F8B /* UIKit.framework */,
 				33BCF6F316F3D5D100D52F8B /* Foundation.framework */,
 				33BCF6F516F3D5D100D52F8B /* CoreGraphics.framework */,
@@ -83,11 +111,24 @@
 		33BCF6F716F3D5D100D52F8B /* WorldSearch */ = {
 			isa = PBXGroup;
 			children = (
-				33BCF70016F3D5D100D52F8B /* AppDelegate.h */,
-				33BCF70116F3D5D100D52F8B /* AppDelegate.m */,
+				33DD72C116F43BA200233BB2 /* CoreData.sqlite */,
+				33BCF72E16F3D8B900D52F8B /* wordsEn.txt */,
+				33BCF72516F3D75F00D52F8B /* MyUIManagedDocument.h */,
+				33BCF72616F3D76000D52F8B /* MyUIManagedDocument.m */,
+				33BCF72016F3D73400D52F8B /* CoreDataHelper.h */,
+				33BCF72116F3D73400D52F8B /* CoreDataHelper.m */,
+				33BCF71716F3D63900D52F8B /* CoreDataTableViewController.h */,
+				33BCF71816F3D63900D52F8B /* CoreDataTableViewController.m */,
+				33BCF71A16F3D65800D52F8B /* WordSearchTVC.h */,
+				33BCF71B16F3D65800D52F8B /* WordSearchTVC.m */,
+				33BCF72B16F3D79100D52F8B /* Word+Create.h */,
+				33BCF72C16F3D79100D52F8B /* Word+Create.m */,
+				3327773216F3E724006A99AB /* DataMigrator.h */,
+				3327773316F3E724006A99AB /* DataMigrator.m */,
+				33BCF71D16F3D6B700D52F8B /* Model.xcdatamodeld */,
+				33DD72BE16F4395200233BB2 /* Word.h */,
+				33DD72BF16F4395200233BB2 /* Word.m */,
 				33BCF70916F3D5D100D52F8B /* MainStoryboard.storyboard */,
-				33BCF70C16F3D5D100D52F8B /* ViewController.h */,
-				33BCF70D16F3D5D100D52F8B /* ViewController.m */,
 				33BCF6F816F3D5D100D52F8B /* Supporting Files */,
 			);
 			path = WorldSearch;
@@ -96,6 +137,8 @@
 		33BCF6F816F3D5D100D52F8B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				33BCF70016F3D5D100D52F8B /* AppDelegate.h */,
+				33BCF70116F3D5D100D52F8B /* AppDelegate.m */,
 				33BCF6F916F3D5D100D52F8B /* WorldSearch-Info.plist */,
 				33BCF6FA16F3D5D100D52F8B /* InfoPlist.strings */,
 				33BCF6FD16F3D5D100D52F8B /* main.m */,
@@ -163,6 +206,8 @@
 				33BCF70616F3D5D100D52F8B /* Default@2x.png in Resources */,
 				33BCF70816F3D5D100D52F8B /* Default-568h@2x.png in Resources */,
 				33BCF70B16F3D5D100D52F8B /* MainStoryboard.storyboard in Resources */,
+				33BCF72F16F3D8B900D52F8B /* wordsEn.txt in Resources */,
+				33DD72C216F43BA200233BB2 /* CoreData.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +220,14 @@
 			files = (
 				33BCF6FE16F3D5D100D52F8B /* main.m in Sources */,
 				33BCF70216F3D5D100D52F8B /* AppDelegate.m in Sources */,
-				33BCF70E16F3D5D100D52F8B /* ViewController.m in Sources */,
+				33BCF71916F3D63900D52F8B /* CoreDataTableViewController.m in Sources */,
+				33BCF71C16F3D65800D52F8B /* WordSearchTVC.m in Sources */,
+				33BCF71F16F3D6B800D52F8B /* Model.xcdatamodeld in Sources */,
+				33BCF72216F3D73400D52F8B /* CoreDataHelper.m in Sources */,
+				33BCF72716F3D76000D52F8B /* MyUIManagedDocument.m in Sources */,
+				33BCF72D16F3D79100D52F8B /* Word+Create.m in Sources */,
+				3327773416F3E724006A99AB /* DataMigrator.m in Sources */,
+				33DD72C016F4395200233BB2 /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +315,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorldSearch/WorldSearch-Prefix.pch";
 				INFOPLIST_FILE = "WorldSearch/WorldSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +327,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WorldSearch/WorldSearch-Prefix.pch";
 				INFOPLIST_FILE = "WorldSearch/WorldSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -298,8 +352,22 @@
 				33BCF71316F3D5D100D52F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		33BCF71D16F3D6B700D52F8B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				33BCF71E16F3D6B800D52F8B /* Model.xcdatamodel */,
+			);
+			currentVersion = 33BCF71E16F3D6B800D52F8B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 33BCF6E616F3D5D100D52F8B /* Project object */;
 }
