@@ -5,6 +5,6 @@
         <attribute name="prefix" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Word" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Word" positionX="-1665" positionY="192" width="128" height="75"/>
     </elements>
 </model>
